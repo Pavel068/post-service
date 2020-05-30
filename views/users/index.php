@@ -10,6 +10,7 @@ use yii\grid\GridView;
 $this->title = 'Администраторы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="users-index">
 
     <h1><?= Html::encode($this->title) ?></h1>

@@ -1,0 +1,20 @@
+nav, .summary, .header, .footer, .breadcrumb, .btn, .table:not(.detail-view) tr:nth-child(2), .table:not(.detail-view) th:last-child, .table:not(.detail-view) td:last-child {
+    display: none !important;
+}
+
+.container {
+    margin-top: -75px;
+}
+
+a:link:after, a:visited:after {
+    display: none;
+    content: "";
+}
+
+table {
+    width: 100%;
+}
+
+table td, table th {
+    text-align: center;
+}

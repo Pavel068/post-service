@@ -22,6 +22,9 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+
+    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print" />
+
     <?php $this->head() ?>
 </head>
 <body>
@@ -88,6 +91,8 @@ AppAsset::register($this);
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+
+        <input type="button" class="btn btn-primary" value="Печать" onClick="window.print()"/>
     </div>
 </div>
 
